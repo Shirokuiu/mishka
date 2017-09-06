@@ -1,0 +1,45 @@
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials__link {
+  display: block;
+  margin-right: 41px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &--inst {
+    .bg-svg(@inst);
+    &:hover {
+      .bg-svg(@inst-hover);
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &--fb {
+    .bg-svg(@fb);
+    &:hover {
+      .bg-svg(@fb-hover);
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &--tw {
+    .bg-svg(@tw);
+    &:hover {
+      .bg-svg(@tw-hover);
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .socials {
+    margin-bottom: 56px;
+  }
+}

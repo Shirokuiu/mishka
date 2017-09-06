@@ -1,0 +1,252 @@
+.popular-good {
+  margin-bottom: 68px;
+}
+
+.popular-good__headlineWrap {
+  position: relative;
+  z-index: 10;
+  
+  display: flex;
+  align-items: center;
+  width: 690px;
+  margin-bottom: -109px;
+  padding-left: 29px;
+}
+
+.popular-good__blocksWrap {
+  position: relative;
+  z-index: 5;
+  
+  display: flex;
+  margin-bottom: 73px;
+}
+
+.popular-good__blockLeft,
+.popular-good__blockRight {
+  width: 50%;
+}
+
+.popular-good__blockLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-right: 6.476190476190476%;
+  padding-top: 173px;
+}
+
+.popular-good__mark {
+  display: block;
+  width: 70px;
+  margin-right: 58px;
+  
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #63d1bb;
+  text-align: center;
+}
+
+.popular-good__headline {
+  .reset();
+  
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 57px;
+}
+
+.popular-good__contentWrap {
+  display: flex;
+  flex-direction: column;
+  width: 62.714286%;
+  height: 100%;
+}
+
+.popular-good__content-text {
+  .reset();
+  
+  margin-bottom: 58px;
+  
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.popular-good__content-description-list {
+  .reset();
+  
+  display: flex;
+  
+  list-style: none;
+  
+  border-bottom: 1px solid #ececec;
+}
+
+.popular-good__content-description-items {
+  margin-right: 35px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+}
+
+.popular-good__orderWrap {
+  margin-top: auto;
+}
+
+.popular-good__content-price {
+  .reset();
+  
+  margin-top: auto;
+  margin-bottom: 34px;
+  
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #444444;
+  text-align: center;
+}
+
+.popular-good__content-button {
+  .reset();
+  
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  
+  border: 2px solid #444444;
+  background-color: transparent;
+  &:hover {
+    color: #ffffff;
+    
+    background-color: #444;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.popular-good__blockRight {
+  img {
+    display: block;
+  }
+}
+
+@media (max-width: 1080px) {
+  .popular-good__headlineWrap {
+    justify-content: space-between;
+    width: auto;
+    margin-bottom: 60px;
+    padding-left: 0;
+  }
+  
+  .popular-good__headline {
+    order: 1;
+    
+    font-size: 43px;
+    line-height: 50px;
+  }
+  
+  .popular-good__mark {
+    order: 2;
+    margin-right: 28px;
+  }
+  
+  .popular-good__blocksWrap {
+    justify-content: space-between;
+  }
+  
+  .popular-good__blockLeft {
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-right: 42px;
+    padding-top: 0;
+  }
+  
+  .popular-good__contentWrap {
+    width: auto;
+  }
+  .popular-good__blockRight {
+    width: 333px;
+    height: 404px;
+  }
+}
+
+@media (max-width: 750px) {
+  .popular-good {
+    margin-bottom: 34px;
+  }
+  
+  .popular-good__content {
+    position: relative;
+  }
+  
+  .popular-good__headlineWrap {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+  
+  .popular-good__mark {
+    width: auto;
+  }
+  
+  .popular-good__headline {
+    margin-bottom: 4px;
+    
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  
+  .popular-good__content-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .popular-good__blocksWrap {
+    flex-direction: column;
+    margin-bottom: 217px;
+  }
+  
+  .popular-good__blockLeft {
+    width: auto;
+    margin-bottom: 28px;
+    padding-right: 0;
+  }
+  
+  .popular-good__content-text {
+    margin-bottom: 30px;
+  }
+  
+  .popular-good__orderWrap {
+    position: absolute;
+    bottom: -162px;
+    left: 0;
+    right: 0;
+  }
+  
+  .popular-good__blockRight {
+    width: auto;
+    height: auto;
+  }
+  
+  .popular-good__content-price {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 28px;
+  }
+}

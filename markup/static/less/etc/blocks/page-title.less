@@ -1,0 +1,242 @@
+.page-title {
+  background-color: #f9f9f9;
+  
+  margin-bottom: 122px;
+  &--catalog {
+    margin-bottom: 111px;
+    
+    background-color: #f1f1f1;
+  }
+}
+
+.page-title__wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 745px;
+  
+  background-image: url("%=static=%content/page-title--index-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 83px;
+  &--catalog {
+    min-height: auto;
+    
+    background-image: none;
+  }
+}
+
+.page-title__list {
+  .reset();
+  
+  display: flex;
+  margin-bottom: 115px;
+  padding-top: 25px;
+  
+  list-style: none;
+  &--catalog {
+    margin-bottom: 65px;
+  }
+}
+
+.page-title__items {
+  margin-right: 60px;
+  &:nth-last-child(-n+2) {
+    margin-right: 0;
+  }
+  &--text {
+    margin-left: auto;
+    
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+.page-title__item {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-title__headline {
+  .reset();
+  
+  width: 57.52380952380952%;
+  margin: 0 auto;
+  
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 57px;
+  text-align: center;
+  &--catalog {
+    margin-bottom: 99px;
+  }
+}
+
+.page-title__blockWrap {
+  display: flex;
+  margin-top: auto;
+}
+
+.page-title__block {
+  width: 50%;
+  
+  background-color: #63d2bc;
+  
+  transition: 0.2s ease;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.page-title__block-link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 7.047619047619048%;
+  
+  text-decoration: none;
+  span {
+    display: block;
+    width: 21.14285714285714%;
+  
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  &--interior,
+  &--toy {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 30px;
+      right: 36px;
+    }
+  }
+  &--interior {
+    &::before {
+      .bg-svg(@page-title__block--interior);
+    }
+  }
+  &--toy {
+    background-color: #56c4b3;
+    &::before {
+      .bg-svg(@page-title__block--toy);
+    }
+  }
+}
+
+.page-title__border {
+  position: relative;
+  
+  height: 19px;
+  margin-top: -19px;
+  
+  background-image: url("%=static=%content/page-title__border.png");
+  background-repeat: repeat-x;
+}
+
+@media (max-width: 1080px) {
+  .page-title {
+    margin-bottom: 55px;
+  }
+  
+  .page-title__wrap {
+    background-image: url(../img/content/page-title--index-bg-tablet.jpg);
+    &--catalog {
+      background-image: none;
+    }
+  }
+  
+  .page-title__item {
+    display: none;
+  }
+  
+  .page-title__headline {
+    width: 77.322917%;
+    
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+  
+  .page-title__border {
+    height: 18px;
+    margin-top: -18px;
+    
+    background-image: url(../img/content/page-title__border-tablet.png);
+  }
+}
+
+@media (max-width: 750px) {
+  .page-title {
+    position: relative;
+    
+    margin-bottom: 34px;
+    &--form {
+      margin-bottom: 29px;
+    }
+  }
+  
+  .page-title__wrap {
+    min-height: 489px;
+    
+    background-image: url(../img/content/page-title--index-bg-mobile.jpg);
+    background-position: center 5px;
+    &--catalog {
+      min-height: auto;
+      
+      background-image: none;
+    }
+  }
+  
+  .page-title__list {
+    display: none;
+  }
+  
+  .page-title__headline {
+    width: 93.84615384615385%;
+    margin-top: 74px;
+    
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #010000;
+    &--catalog {
+      width: 100%;
+      margin-bottom: 74px;
+    }
+    &--form {
+      font-size: 26px;
+    }
+  }
+  
+  .page-title__blockWrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .page-title__block {
+    width: 100%;
+  }
+  
+  .page-title__border {
+    display: none;
+  }
+}

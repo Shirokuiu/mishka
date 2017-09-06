@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+  <head>
+    {{> head/head head.catalog}}
+  </head>
+  <body class="page">
+    %=symbols=%
+    <div class="page__wrapper">
+      <header class="page-header">
+        <div class="container">
+          <nav id="mainNav" class="main-nav">
+            <button id="mainNavButton" class="main-nav__button" type="button"></button>
+            <ul class="main-nav__listLeft">
+              <li class="main-nav__itemsLeft"><a href="catalog.html" class="main-nav__itemLeft">Каталог товаров</a></li>
+              <li class="main-nav__itemsLeft"><a href="form.html" class="main-nav__itemLeft">Вязание на заказ</a></li>
+            </ul>
+            <div class="logo">
+              <a href="index.html" class="logo__link logo__link--header">
+                <picture>
+                  <source media="(max-width: 1080px) and (min-width: 751px)" srcset="%=static=%img/content/logo-tablet.svg">
+                  <source media="(max-width: 750px)" srcset="%=static=%img/content/logo-mobile.svg">
+                  <img src="%=static=%img/content/logo.svg" width="149" height="72" alt="Логотип Мишка">
+                </picture>
+              </a>
+            </div>
+            <ul class="main-nav__listRight">
+              <li class="main-nav__itemsRight main-nav__itemsRight--search"><a href="#" class="main-nav__itemRight main-nav__itemRight--search">Поиск по сайту</a></li>
+              <li class="main-nav__itemsRight main-nav__itemsRight--basket"><a href="#" class="main-nav__itemRight main-nav__itemRight--basket">Корзина: пока пуста</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page-content">
+        <div class="page-title page-title--catalog">
+          <div class="container">
+            <div class="page-title__wrap page-title__wrap--catalog">
+              <ul class="page-title__list page-title__list--catalog">
+                <li class="page-title__items"><a href="#" class="page-title__item">Новые поступления</a></li>
+                <li class="page-title__items"><a href="#" class="page-title__item">Распродажа</a></li>
+                <li class="page-title__items page-title__items--text">Бесплатная доставка по России</li>
+              </ul>
+              <h1 class="page-title__headline page-title__headline--catalog">Каталог товаров</h1>
+            </div>
+          </div>
+          <div class="page-title__border"></div>
+        </div>
+        <div class="catalog-goods">
+          <div class="container">
+            <div class="catalog-goods__content">
+              <div class="catalog-good">
+                <div class="catalog-good__img">
+                  <picture>
+                    <source media="(max-width: 1080px) and (min-width: 851px)" srcset="%=static=%img/content/catalog-good-img1-tablet.jpg">
+                    <source media="(max-width: 850px)" srcset="%=static=%img/content/catalog-good-img1-mobile.jpg">
+                    <img src="%=static=%img/content/catalog-good-img1.jpg" alt="Зайчик попрыгайчик">
+                  </picture>
+                </div>
+                <div class="catalog-good__content">
+                  <div class="catalog-good__content-rowTop">
+                    <h2 class="catalog-good__headline">Зайчик-попрыгайчик</h2>
+                    <p class="catalog-good__content__description">Рост 30 см, вес 200 г</p>
+                  </div>
+                  <div class="catalog-good__content-rowBottom">
+                    <a href="#" class="catalog-good__content-link">1 200 руб.</a >
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-good">
+                <div class="catalog-good__img">
+                  <picture>
+                    <source media="(max-width: 1080px) and (min-width: 851px)" srcset="%=static=%img/content/catalog-good-img2-tablet.jpg">
+                    <source media="(max-width: 850px)" srcset="%=static=%img/content/catalog-good-img2-mobile.jpg">
+                    <img src="%=static=%img/content/catalog-good-img2.jpg" alt="Корзинка для белья">
+                  </picture>
+                </div>
+                <div class="catalog-good__content">
+                  <div class="catalog-good__content-rowTop">
+                    <h2 class="catalog-good__headline">Корзинка для белья</h2>
+                    <p class="catalog-good__content__description">Диаметр 15 см, высота 10 см</p>
+                  </div>
+                  <div class="catalog-good__content-rowBottom">
+                    <a href="#" class="catalog-good__content-link">690 руб.</a >
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-good">
+                <div class="catalog-good__img">
+                  <picture>
+                    <source media="(max-width: 1080px) and (min-width: 851px)" srcset="%=static=%img/content/catalog-good-img3-tablet.jpg">
+                    <source media="(max-width: 850px)" srcset="%=static=%img/content/catalog-good-img3-mobile.jpg">
+                    <img src="%=static=%img/content/catalog-good-img3.jpg" alt="Большая корзинка для игрушек">
+                  </picture>
+                </div>
+                <div class="catalog-good__content">
+                  <div class="catalog-good__content-rowTop">
+                    <h2 class="catalog-good__headline">Большая корзинка для игрушек</h2>
+                    <p class="catalog-good__content__description">Диаметр 30 см, высота 30 см</p>
+                  </div>
+                  <div class="catalog-good__content-rowBottom">
+                    <a href="#" class="catalog-good__content-link">1 500 руб.</a >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video">
+          <div class="container">
+            <div class="video__content">
+              <div class="video__blockVideo">
+                <picture>
+                  <source media="(max-width: 1100px) and (min-width: 751px)" srcset="%=static=%img/content/video-img-tablet.jpg">
+                  <source media="(max-width: 750px)" srcset="%=static=%img/content/video-img-mobile.jpg">
+                  <img src="%=static=%img/content/video-img.jpg" alt="Видео">
+                </picture>
+              </div>
+              <div class="video__blockContent">
+                <h2 class="video__headline">Процесс производства</h2>
+                <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <button class="video__button" type="button">Сделать заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="page-footer__content">
+            <div class="logo logo--footer">
+              <a class="logo__link logo__link--footer" href="index.html"></a>
+            </div>
+            <div class="socials">
+              <a href="#" class="socials__link socials__link--inst"></a>
+              <a href="#" class="socials__link socials__link--fb"></a>
+              <a href="#" class="socials__link socials__link--tw"></a>
+            </div>
+            <div class="copyright">
+              <a href="https://htmlacademy.ru/" class="copyright__link">Разработано</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="%=static=%js/separate-js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+
+    <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+    <script src="%=static=%js/main%=hash=%%=min=%.js"></script>
+  </body>
+</html>

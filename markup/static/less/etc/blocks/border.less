@@ -1,0 +1,28 @@
+.border__content {
+  height: 23px;
+  
+  background-image: url("%=static=%content/border.png");
+  background-repeat: repeat-x;
+}
+
+@media (max-width: 1080px) {
+  .border {
+    .container {
+      padding: 0 0;
+    }
+  }
+  
+  .border__content {
+    height: 15px;
+    
+    background-image: url("%=static=%content/border-tablet.png");
+  }
+}
+
+@media (max-width: 750px) {
+  .border__content {
+    height: 6px;
+    
+    background-image: url("%=static=%content/border-mobile.png");
+  }
+}

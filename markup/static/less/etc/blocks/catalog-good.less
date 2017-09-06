@@ -1,0 +1,150 @@
+.catalog-good {
+  display: flex;
+  flex-direction: column;
+  width: 316px;
+}
+
+.catalog-good__img {
+  img {
+    display: block;
+  }
+}
+
+.catalog-good__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 29px;
+  padding-right: 28px;
+  padding-left: 28px;
+  
+  border: 1px solid #ececec;
+  
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.catalog-good__content-rowTop {
+  margin-bottom: 19px;
+}
+
+.catalog-good__headline {
+  .reset();
+  
+  margin-bottom: 6px;
+  
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog-good__content__description {
+  .reset();
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.catalog-good__content-rowBottom {
+  margin-top: auto;
+  padding-bottom: 29px;
+  padding-top: 27px;
+  
+  border-top: 1px solid #ececec;
+}
+
+.catalog-good__content-link {
+  position: relative;
+  
+  display: block;
+  
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+    .bg-svg(@basket);
+  }
+  &:hover {
+    &::before {
+      .bg-svg(@basket-hover);
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .catalog-good {
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 54px;
+    
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .catalog-good__content {
+    flex-grow: 1;
+    height: auto;
+    &:hover {
+      box-shadow: none;
+  }
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .catalog-good {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .catalog-good__content {
+    padding-bottom: 20px;
+  }
+  
+  .catalog-good__content-rowBottom {
+    padding-bottom: 0;
+  }
+  
+  .catalog-good__headline {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .catalog-good__content__description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  
+  .catalog-good__content-link {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+}

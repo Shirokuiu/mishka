@@ -1,0 +1,173 @@
+.video {
+  margin-bottom: 105px;
+}
+
+.video__content {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 67px;
+  
+  border: 1px solid #ececec;
+}
+
+.video__blockVideo {
+  position: relative;
+  
+  cursor: pointer;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+    
+    transition: 0.2s ease;
+    
+    .bg-svg(@video-play);
+  }
+  &:hover {
+    &::before {
+      transform: scale(1.2);
+    }
+  }
+  img {
+    display: block;
+  }
+}
+
+.video__blockContent {
+  position: relative;
+  
+  width: 222px;
+  margin-top: 80px;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: -42px;
+    left: 0;
+    
+    .bg-svg(@video-content);
+  }
+}
+
+.video__headline {
+  .reset();
+  
+  margin-bottom: 34px;
+  
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.video__description {
+  .reset();
+  
+  margin-bottom: 43px;
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+}
+
+.video__button {
+  .reset();
+  
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  
+  background-color: transparent;
+  
+  border: 2px solid #444444;
+  &:hover {
+    color: #ffffff;
+    
+    background-color: #444;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (max-width: 1100px) {
+  .video__blockVideo {
+    width: auto;
+  }
+  
+  .video__content {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  
+  .video__blockContent {
+    width: auto;
+    padding-left: 40px;
+    padding-right: 47px;
+    padding-bottom: 46px;
+    &::before {
+      left: 40px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .video {
+    margin-bottom: 58px;
+  }
+  
+  .video__content {
+    position: relative;
+    
+    padding-top: 103px;
+  }
+  
+  .video__blockContent {
+    position: static;
+    
+    margin-top: 34px;
+    padding-bottom: 33px;
+    padding-left: 34px;
+    padding-right: 34px;
+    &::before {
+      left: 40px;
+      top: 37px;
+    }
+  }
+  
+  .video__headline {
+    position: absolute;
+    top: 40px;
+    left: 87px;
+    
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .video__description {
+    margin-bottom: 29px;
+    
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 378px) {
+  .video__headline {
+    top: 26px;
+  }
+}

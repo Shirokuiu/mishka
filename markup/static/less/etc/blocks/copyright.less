@@ -1,0 +1,29 @@
+.copyright__link {
+  position: relative;
+  
+  display: block;
+  padding-right: 57px;
+  
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+  &::before {
+    content: '';
+    
+    position: absolute;
+    top: -6px;
+    right: 0;
+    
+    .bg-svg(@html-academy);
+  }
+  &:hover {
+    &::before {
+      .bg-svg(@html-academy-hover);
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
