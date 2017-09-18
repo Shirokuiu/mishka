@@ -44,7 +44,7 @@
           </div>
           <div class="page-title__border"></div>
         </div>
-        <form action="action.php" class="main-form" method="get">
+        <form id="mainForm" action="action.php" class="main-form" method="get">
           <div class="main-form__blockType">
             <div class="container">
               <h2 class="main-form__headline">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</h2>
@@ -125,15 +125,15 @@
                 <ul class="main-form__blockUser-name-list">
                   <li class="main-form__blockUser-name-items">
                     <label for="userName">Имя:</label>
-                    <input id="userName" type="text" name="userName" placeholder="Введите ваше имя*" required>
+                    <input id="userName" type="text" name="userName" placeholder="Введите ваше имя*">
                   </li>
                   <li class="main-form__blockUser-name-items">
                     <label for="userSurname">Фамилия:</label>
-                    <input id="userSurname" type="text" name="userSurname" placeholder="Укажите фамилию*" required>
+                    <input id="userSurname" type="text" name="userSurname" placeholder="Укажите фамилию*">
                   </li>
                   <li class="main-form__blockUser-name-items">
                     <label for="userSecondname">Отчество:</label>
-                    <input type="text" id="userSecondname" name="userSecondname" placeholder="Отчество, если желаете" required>
+                    <input type="text" id="userSecondname" name="userSecondname" placeholder="Отчество, если желаете">
                   </li>
                 </ul>
               </div>
@@ -147,13 +147,13 @@
                     <div class="main-form__block-headlineWrap main-form__block-headlineWrap--address">
                       <label for="userTel" class="main-form__block-headline">ТЕЛ</label>
                     </div>
-                    <input id="userTel" type="tel" name="userTel" placeholder="+7 ХХХ ХХ ХХ*" required>
+                    <input id="userTel" type="tel" name="userTel" placeholder="+7 ХХХ ХХ ХХ*">
                   </li>
                   <li class="main-form__blockAddress-items main-form__blockAddress-items--mail">
                     <div class="main-form__block-headlineWrap main-form__block-headlineWrap--address-mail">
                       <label for="userMail" class="main-form__block-headline">E-mail</label>
                     </div>
-                    <input id="userMail" type="email" name="userMail" placeholder="Ваш Email*" required>
+                    <input id="userMail" type="email" name="userMail" placeholder="Ваш Email*">
                   </li>
                 </ul>
               </div>
@@ -166,7 +166,7 @@
                 <div class="main-form__blockTextarea-wrap">
                   <textarea id="textarea" name="textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                   <div class="main-form__buttonWrap">
-                    <button class="main-form__button" type="submit">Отправить заказ</button>
+                    <button id="mainFormButton" class="main-form__button" type="submit">Отправить заказ</button>
                     <p class="main-form__requiredText">*Поля обязательны для заполнения</p>
                   </div>
                 </div>

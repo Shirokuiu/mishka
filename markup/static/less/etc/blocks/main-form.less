@@ -232,6 +232,8 @@
 }
 
 .main-form__blockUser-name-items {
+  position: relative;
+  
   display: flex;
   
   margin-bottom: 34px;
@@ -241,6 +243,39 @@
     font-size: 19px;
     font-weight: 700;
     line-height: 18px;
+    &.error {
+      position: absolute;
+      top: 9px;
+      right: -3px;
+      
+      display: block;
+      width: 10px;
+      height: 10px;
+      
+      font-size: 0;
+      &::before,
+      &::after {
+        content: '';
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+        width: 10px;
+        height: 2px;
+        margin: auto;
+        
+        background-color: red;
+      }
+      &::before {
+        transform: rotateZ(45deg);
+      }
+      &::after {
+        transform: rotateZ(-45deg);
+      }
+    }
   }
   input {
     width: 100%;
@@ -256,6 +291,12 @@
     border: none;
     border-bottom: 2px solid #000000;
     outline: none;
+    &.error {
+      border-bottom-color: red;
+    }
+    &.valid {
+      border-bottom-color: green;
+    }
     &::-webkit-input-placeholder {
       color: rgba(68, 68, 68, 0.3);
       font-size: 19px;
@@ -264,7 +305,6 @@
 
       opacity: 1;
     }
-
     &:-moz-input-placeholder {
       color: rgba(68, 68, 68, 0.3);
       font-size: 19px;
@@ -274,7 +314,6 @@
 
       opacity: 1;
     }
-
     &::-moz-placeholder {
       color: rgba(68, 68, 68, 0.3);
       font-size: 19px;
@@ -284,7 +323,6 @@
 
       opacity: 1;
     }
-
     &:-ms-input-placeholder {
       color: rgba(68, 68, 68, 0.3);
       font-size: 19px;
@@ -296,11 +334,23 @@
     }
     &:focus {
       border-bottom: 2px solid #62d1ba;
+      &.error {
+        border-bottom-color: red;
+      }
+      &.valid {
+        border-bottom-color: green;
+      }
     }
   }
   &:hover {
     input {
       border-bottom: 2px solid #62d1ba;
+      &.error {
+        border-bottom-color: red;
+      }
+      &.valid {
+        border-bottom-color: green;
+      }
     }
   }
 }
@@ -325,11 +375,48 @@
 }
 
 .main-form__blockAddress-items {
+  position: relative;
+  
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
   &:last-child {
     margin-bottom: 0;
+  }
+  label {
+    &.error {
+      position: absolute;
+      top: 9px;
+      right: 12px;
+      
+      display: block;
+      width: 10px;
+      height: 10px;
+      
+      font-size: 0;
+      &::before,
+      &::after {
+        content: '';
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        
+        width: 10px;
+        height: 2px;
+        margin: auto;
+        
+        background-color: red;
+      }
+      &::before {
+        transform: rotateZ(45deg);
+      }
+      &::after {
+        transform: rotateZ(-45deg);
+      }
+    }
   }
   input {
     flex-grow: 1;
@@ -346,6 +433,14 @@
     border: none;
     border-bottom: 2px solid #000000;
     outline: none;
+    &.error {
+      background-image: none;
+      
+      border-bottom-color: red;
+    }
+    &.valid {
+      border-bottom-color: green;
+    }
     &::-webkit-input-placeholder {
       color: rgba(68, 68, 68, 0.3);
       font-size: 19px;
@@ -386,11 +481,23 @@
     }
     &:focus {
       border-bottom: 2px solid #62d1ba;
+      &.error {
+        border-bottom-color: red;
+      }
+      &.valid {
+        border-bottom-color: green;
+      }
     }
   }
   &:hover {
     input {
       border-bottom: 2px solid #62d1ba;
+      &.error {
+        border-bottom-color: red;
+      }
+      &.valid {
+        border-bottom-color: green;
+      }
     }
   }
   &--tel,
